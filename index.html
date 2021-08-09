@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+</head>
+<body>
+<header>
+
+
+
+
+    <div id='balance'class="balance" style="background: #000">
+    <p>Balance: <span class="ned">1 $</span></p>
+    </div>
+
+
+
+<!-- DEPOST FORM  -->
+    <a href="#!" class="deposit">
+        <button class="btn">Deposit</button>
+    </a>
+    <div class="deposit-form">
+        <button class="close-2"> X</button>
+        <input type="text" placeholder="Money" class="inputcha"><br>
+        <p class="hide_text-2"> Minimum deposit 1$ </p>
+        <button class="deposit-form-button">Deposit money</button>
+        <img src="./IMGS/payeer-accepted.png" alt="img" width="95%" height="40%" style="top: 20%">
+    </div>
+
+
+    <div class="withdraw-form">
+        <button class="close"> X</button>
+        <br>
+        <input type="text" placeholder="Payeer account " class="i-1"><br>
+        <input type="number" placeholder="Money" class="i-2"><br>
+        <p> Minimum withdraw 10$ </p>
+        <p class="hide_text"></p>
+        <button class="withdraw-form-btn">Withdraw money</button>
+        <img src="./IMGS/payeer-accepted.png" alt="img" width="90%">
+    </div>
+
+    <div class="container">
+        <header class="header" style="background:rgba(0, 0, 0, 0.7)">
+            <h1><i class="fa fa-play" style="color: blue; margin: 0 5px "></i><span style="color: blue">Play</span> <span style="color: red">Rock Paper Scissors</span> <span style="color: #28a745"> and earn money <i class="fa fa-money-check"></i></span></h1>
+
+            <button id="restart" class="restart-btn" style="display: none">Restart Game</button>
+            <button id="withdraw" class="withdraw-btn" style="width: 200px; height: 50px; font-weight: 600;  " >Withdraw money</button>
+            <p style="color:  #111; font-size: 62px; font-weight: 600 ; color: #28a745;" >CHOSE 1 TIME FOR 0.5$ </p>
+        </header>
+
+        <div class="choices" style="height: 400px; align-items: center; background: rgba(0, 0, 0, 0.7)  ">
+            <i id="rock" class="choice fas fa-hand-rock fa-10x"></i>
+            <i id="paper" class="choice fas fa-hand-paper fa-10x"></i>
+            <i id="scissors" class="choice fas fa-hand-scissors fa-10x"></i>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal">
+        <div id="result" class="modal-content"></div>
+    </div>
+</header>
+
+	
+	<script src="script.js"></script>
+</body>
+</html>
